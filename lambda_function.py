@@ -7,7 +7,7 @@ def lambda_handler(event, context):
 
     left = dict_body_data["left_value"]
     right = dict_body_data["right_value"]
-    summation = left * 20 + right * 3
+    summation = left * 100 - right * 30
     return {
         'statusCode': 200,
         'body': json.dumps({"left":left, "right":right, "result": summation}),
